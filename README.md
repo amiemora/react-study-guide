@@ -1,7 +1,7 @@
-## WHat is Rreact? 
-• Open-source JS Library
-• Used for building User Interfaces 
-• Simplifies SPA by using reusable components 
+## What is Rreact? 
+• Open-source JS Library  
+• Used for building User Interfaces   
+• Simplifies SPA by using reusable components   
 
 ## Explain the concept of JSX and its advantages.
 JSX stands for JavaScript XML - it allows us to write HTML inside our JS code. This JSX creates the Virtual DOM. 
