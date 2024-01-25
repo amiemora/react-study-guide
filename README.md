@@ -1,7 +1,7 @@
 ## What is React? 
-- Open-source JS Library  
-- Used for building User Interfaces   
-- Simplifies SPA by using reusable components   
+- Open-source JS Library.  
+- Used for building User Interfaces.   
+- Simplifies SPA by using reusable components.   
 
 ## What are the Key Features of React? 
 1. **Virtual DOM**   
@@ -19,15 +19,68 @@ React benefits from a vibrant & extensive community, contributing to a rich ecos
 7. **React Hooks**   
 Hooks are functions that enable functional components to manage state & lifecycle features, providing a more concise & expressive way to handle component logic. 
 
+## What is DOM? 
+- **Document Object Model** represents the web-page as a tree-like structure which allows JS to dynamically access & manipulate the content & structure of web-page.
+- DOM is the actual representation of the web-page.
+- Re-renders the entire page when updates occur.
+- Can be slower, especially with frequent updates.
+- Suitable for static websites & simple applications.
 
-## Explain the concept of JSX and its advantages.
-JSX stands for JavaScript XML - it allows us to write HTML inside our JS code. This JSX creates the Virtual DOM. 
+## What is Virtual DOM? 
+- Specific to React only.
+- Lightweight copy of the DOM.
+- Reacts creates an exact copy of the DOM , this is the Virtual DOM.
+- The user is interacting & makig changes to the Virtual DOM.
+- If a user is changing any HTML element, Virtual DOM will only update that HTML element not the entire DOM.
+- We only update changed elements, minimum re-renders. 
+- React uses the Virtual DOM to effeciently update the UI without re-rendering the entire page, which helps improve performance & make the application more responsive.
+- Re-renders only the changed parts efficiently.
+- Optimized for faster rendering.
+- Ideal for dynamic & complex SPA with frequent updates.
+
+## What are React Components?
+- A reusable building block for creating User Interfaces.
+
+## What is a SPA? 
+- A web-app that has only one single web-page.
+- Whenever a user does some action on the website, the content is dynamically updated without refreshing or loading a new page.
+
+## What are 5 advantages of React? 
+1. Simple to build SPA (by using components).
+2. React is cross-platform & open-source.
+3. Lightweight & very fast (Virtual DOM).
+4. Large Community & Ecosystem.
+5. Testing is easy 
+
+## What are the disadvantages of React?
+- React is not a good choice for small applications.
+
+## What is the role of JSX in React?
+- Javascript XML.
+- JSX is used by React to write HTML-like code.
+- JSX is converted to JS via Babel because browsers understand JS not JSX.
+
+## What is the difference between Declarative & Imperative syntax?
+- Declarative syntax focuses on describing the desired result without without specifying the step-by-step process.
+- JSX in React is used to write declarative syntax.
+- Imperative Syntax involves step-by-step process to achieve a particular goal.
+- JS has an imperative syntax. 
+
+## What is Arrow Function Expression in JSX? 
+```js
+const Nav = (props) => {
+return (
+<div>
+<h1>{props.name}</h1>
+</div>
+);
+};
+export default Nav;
+```
 
 ## Differentiate between state and props in React.
 State is an object that represents the internal data of a component. Props are properties passed to a component from its parent. Lifting state up involves moving the state to a common ancestor to share data between components. Default props are used to set default values for props.
 
-## Performance Optimization:
-The Virtual DOM is a lightweight copy of the actual DOM, allowing React to efficiently update the UI. Performance optimization includes using PureComponent, memoization with useMemo and useCallback, and optimizing renders with shouldComponentUpdate or React.memo.
 
 ## useState 
 Purpose: Manages state in functional components.     
