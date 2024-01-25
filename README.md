@@ -11,6 +11,6 @@ State is an object that represents the internal data of a component. Props are p
 The Virtual DOM is a lightweight copy of the actual DOM, allowing React to efficiently update the UI. Performance optimization includes using PureComponent, memoization with useMemo and useCallback, and optimizing renders with shouldComponentUpdate or React.memo.
 
 ## useState 
-Purpose: Manages state in functional components. \n
+Purpose: Manages state in functional components.     
 Example:
 
