@@ -181,7 +181,7 @@ const myComponentRef = useRef();
 myComponentRef.current.focusInput();
 ```
 
-## seLayoutEffect
+## useLayoutEffect
 Purpose: Similar to useEffect, but fires synchronously after all DOM mutations. It's often used for tasks that require measurements or interactions with the DOM before the browser paints.
 ```js
 import React, { useLayoutEffect, useState, useRef } from 'react';
