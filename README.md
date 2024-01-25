@@ -1,4 +1,4 @@
-## What is Rreact? 
+## What is React? 
 - Open-source JS Library  
 - Used for building User Interfaces   
 - Simplifies SPA by using reusable components   
@@ -264,5 +264,4 @@ function ComponentUsingCustomHook() {
 
 
 
-
-
+SOURCES: https://youtu.be/IMEzmmP3WAs?si=DJxLbzm7QlbkeJL7
