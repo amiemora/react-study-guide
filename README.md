@@ -5,7 +5,19 @@
 
 ## What are the Key Features of React? 
 1. **Virtual DOM**   
-React utilizes a virtual representation of the DOM, allowing efficient updates minimizing direct manipulation of the actual DOM, resulting in improved performance. 
+React utilizes a virtual representation of the DOM, allowing efficient updates minimizing direct manipulation of the actual DOM, resulting in improved performance.   
+2. **Component Based Architecture**   
+React structures user interfaces as modular, reusable components, promoting a more maintainable & scalable approach to building applications. 
+3. **Reusability & Composition**
+React enables the creation of reusable components that can be composed together, fostering a modular & efficient development process.   
+4. **JSX**
+JSX is a syntax extension for JS used in React, allowing developers to write HTML-like code within JS, enhancing readability & maintainability.   
+5. **Declarative Syntax**   
+Reace has a declarative programming style(JSX), where developers focus on "what" the UI should look like & React handles the "how" behind the scenes. This simplifies the code.  
+6. **Community & Ecosystem**
+React benefits from a vibrant & extensive community, contributing to a rich ecosystem of libraries, tools, & resources, fostering collaborative development & innovation.   
+7. **React Hooks**   
+Hooks are functions that enable functional components to manage state & lifecycle features, providing a more concise & expressive way to handle component logic. 
 
 
 ## Explain the concept of JSX and its advantages.
