@@ -12,5 +12,20 @@ The Virtual DOM is a lightweight copy of the actual DOM, allowing React to effic
 
 ## useState 
 Purpose: Manages state in functional components.     
-Example:
+Example:    
+```js
+import React, { useState } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
+}
+
+```
 
