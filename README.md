@@ -1,5 +1,7 @@
-## What is React, and how does it differ from other JavaScript frameworks?
-React is a JavaScript library for building user interfaces. It focuses on the component-based architecture, making UI development more manageable and modular.
+## WHat is Rreact? 
+• Open-source JS Library
+• Used for building User Interfaces 
+• Simplifies SPA by using reusable components 
 
 ## Explain the concept of JSX and its advantages.
 JSX stands for JavaScript XML - it allows us to write HTML inside our JS code. This JSX creates the Virtual DOM. 
