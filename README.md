@@ -25,6 +25,113 @@ function Counter() {
     </div>
   );
 }
-
 ```
+
+## useEffect
+Purpose: Handles side effects in functional components (e.g., data fetching, subscriptions).
+```js
+import React, { useState, useEffect } from 'react';
+
+function DataFetcher() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    // Fetch data from an API
+    fetch('https://api.example.com/data')
+      .then(response => response.json())
+      .then(data => setData(data))
+      .catch(error => console.error('Error fetching data:', error));
+  }, []); // Empty dependency array means it runs once on mount
+
+  return (
+    <ul>
+      {data.map(item => (
+        <li key={item.id}>{item.name}</li>
+      ))}
+    </ul>
+  );
+}
+```
+
+## useRef
+Purpose: Creates a mutable object that persists across renders.  
+```js
+import React, { useRef, useEffect } from 'react';
+
+function FocusInput() {
+  const inputRef = useRef();
+
+  useEffect(() => {
+    // Focus on the input element when the component mounts
+    inputRef.current.focus();
+  }, []);
+
+  return <input ref={inputRef} />;
+}
+```
+
+## useContext
+Purpose: Accesses the value of a React context.  
+```js
+import React, { createContext, useContext } from 'react';
+
+// Create a context
+const ThemeContext = createContext();
+
+function ThemedComponent() {
+  // Consume the context value
+  const theme = useContext(ThemeContext);
+
+  return <div style={{ background: theme.background, color: theme.text }}>Themed Content</div>;
+}
+```
+
+## useReducer
+Purpose: Manages more complex state logic using a reducer function.  
+```js
+import React, { useReducer } from 'react';
+
+// Reducer function
+const counterReducer = (state, action) => {
+  switch (action.type) {
+    case 'INCREMENT':
+      return { count: state.count + 1 };
+    case 'DECREMENT':
+      return { count: state.count - 1 };
+    default:
+      return state;
+  }
+};
+
+function Counter() {
+  const [state, dispatch] = useReducer(counterReducer, { count: 0 });
+
+  return (
+    <div>
+      <p>Count: {state.count}</p>
+      <button onClick={() => dispatch({ type: 'INCREMENT' })}>Increment</button>
+      <button onClick={() => dispatch({ type: 'DECREMENT' })}>Decrement</button>
+    </div>
+  );
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
