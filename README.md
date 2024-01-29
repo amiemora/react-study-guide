@@ -78,6 +78,46 @@ return (
 export default Nav;
 ```
 
+## How does a React app load and display components?
+- index.html loads first (single page).
+- Then with the help of react-libraries the index.js file is loaded (JS entry point).
+- Then app.js gets loaded (root component - placeholder for all child components).
+
+## How does React provide reusability & composition?
+- Through a component based architecture.
+- Once you create a component you can reuse it.
+- Composition is creating a bew & big component by combining existing small components.
+
+## What are State, Stateless, Stateful & State Management? 
+- State refers to the current data of the component.
+- Stateful/State management means when a user performs some actions on the UI, then the React app. should be able to update & re-render that data or state on the UI.
+- A stateless component, also known as a functional component, is a fundamental concept in React that represents a UI element without any internal state management.
+
+## What are Props?
+- Props (properties) are a way to pass data from a parent component to a child component. 
+
+## What is NPM? What is the role of the node_modules folder?
+- NPM (Node Package Manager) is used to manage the dependencies for your React project including the React library itself. 
+- node_modules folder contains all the dependencies of the project including react libraries. 
+
+## What is the role of a Fragment?
+- A way ti group multiple children elements.
+- Prevents the addition of unecessary nodes to the DOM.
+
+## What is the spread operator?
+- Used to expand & spread an array or object.
+
+## What are forms of conditional rendering?
+1. If/Else
+2. Ternary Operator 
+3. && Operator
+4. Switch Statement
+
+## Transpile VS Compile?
+- Transpile :
+   - transform
+  
+
 ## Differentiate between state and props in React.
 State is an object that represents the internal data of a component. Props are properties passed to a component from its parent. Lifting state up involves moving the state to a common ancestor to share data between components. Default props are used to set default values for props.
 
