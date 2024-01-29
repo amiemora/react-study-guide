@@ -170,14 +170,24 @@ npm install react-router-dom
 </Routes>
 ```
 
-
-
 ## Differentiate between state and props in React.
 State is an object that represents the internal data of a component. Props are properties passed to a component from its parent. Lifting state up involves moving the state to a common ancestor to share data between components. Default props are used to set default values for props.
 
+## What are React Hooks? What are the top hooks? 
+- Bult-in functions provided by React that allows functional components to use state & life-cycle features.
+- Before hooks, class components life-cycle methods were used to maintain state in React applications.
+1. useState : State.
+2. useEffect : Side effect.
+3. useContext : Context.
+4. useReducer : Complex state.
+5. useCallback : Memoization.
+6. useMemo : Performance.
+7. useRef : refs.
+8. useLayoutEffect : Synchronous side effects.
+
 
 ## useState 
-Purpose: Manages state in functional components.     
+Purpose: Manages state in functional components. 
 ```js
 import React, { useState } from 'react';
 
@@ -195,6 +205,10 @@ function Counter() {
 
 ## useEffect
 Purpose: Handles side effects in functional components (e.g., data fetching, subscriptions).
+- useEffect is called after the component renders.
+- useEffect will accept 2 parameters: effect function & dependency array.
+- Dependency Array (optional) : acts as triggers for useEffect to rerun; meaning if any of the dependencies values change, the code inside the useEffect will be executed again.
+     - If the array is empty it indicates that the useEffect should only run once. 
 ```js
 import React, { useState, useEffect } from 'react';
 
