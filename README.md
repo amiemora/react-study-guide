@@ -108,15 +108,69 @@ export default Nav;
 - Used to expand & spread an array or object.
 
 ## What are forms of conditional rendering?
-1. If/Else
-2. Ternary Operator 
-3. && Operator
-4. Switch Statement
+1. If/Else.
+2. Ternary Operator. 
+3. && Operator.
+4. Switch Statement.
 
 ## Transpile VS Compile?
 - Transpile :
    - transform
-  
+   - JSX --> JS
+   - Babel
+   - High-level language --> another High-level language 
+- Compile : 
+   - High-level language --> Lower-level language 
+
+## What is prop drilling?
+- The process of passing down props through multiple layers of components.
+
+## 5 ways to avoid prop drilling
+1. Use context API.
+2. Use Redux.
+3. Use component composition.
+4. Use callback functions.
+5. Use custom hooks.
+
+## Functional VS Class Component? 
+- Functional : 
+    - Defined as JS Function.
+    - Originally stateless but can now maintain state using hooks.
+    - No life-cycle methods.
+    - More readable & concise.
+    - Does not use "this" keyword.
+    - Does not use the "render ()" method.
+- Class : 
+    - Defined as a JS (ES6) class.
+    - Can manage local state with "this.state".
+    - Stateful components by using the life-cycle method.
+    - Verbose (complex).
+    - Uses the "render ()" method.
+
+## What is Routing & Router in React? 
+- Routing : Allows you to create a single-page web application with navigation without the need for a full-page refresh.
+- React Router : A library for handling routing & enables navigation & rendering of different components based on the URL. 
+
+## How to implement Routing in React? 
+```js
+npm install react-router-dom 
+```
+1. Install React Router.
+2. Create Navigation.
+3. Create Routes.
+
+## What are the roles of <Routes> & <Route> in React Routing?
+- The <Routes> component is used as the root container for declaring your collection of routes.
+- The <Route> component is used to define a route & specify the component that should render when the route matches.
+```js
+<Routes>
+   <Route path="/" element={<Home/>} />
+   <Route path="/about" element={<About/>} />
+   <Route path="/contact" element={<Contact/>} />
+</Routes>
+```
+
+
 
 ## Differentiate between state and props in React.
 State is an object that represents the internal data of a component. Props are properties passed to a component from its parent. Lifting state up involves moving the state to a common ancestor to share data between components. Default props are used to set default values for props.
